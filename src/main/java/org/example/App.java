@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "./src/main/java/feature",glue="stepdefinition")
+@CucumberOptions(features = "./src/main/java/feature",glue="stepdefinition",tags = "@excel",plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 public class App 
 {
 
